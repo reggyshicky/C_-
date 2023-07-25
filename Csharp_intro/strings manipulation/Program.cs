@@ -30,7 +30,7 @@ string confession = "Honestly I love C#, maybe I  can make a career out if it";
 Console.WriteLine(confession.Contains("love"));
 Console.WriteLine(confession.Contains("home"));
 
-//use of StarWith() string manipulation, returns a boolean value
+//use of StartsWith() string manipulation, returns a boolean value
 Console.WriteLine(confession.StartsWith("Honestly"));
 
 
