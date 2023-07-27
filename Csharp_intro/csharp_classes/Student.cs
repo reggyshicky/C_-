@@ -1,14 +1,30 @@
-namespace Regina{
+namespace Regina
+{
 	public class Student
 	{
-		public int Age {get; set;}
-		public int Id  {get; set;}
-		public string Name {get; set;}
-		public string Grade {get; set;}
+		public int age {get; set;}
+		public int id {get; set;}
+		public string? grade {get; set;}
+		public string? name {get; set;}
 
-		public string student_details()
+		public string print_student_details()
 		{
-			return @$"The student whose name is {Name} and id is {Id} is {Age} years old and has a grade of {Grade}";
+			return $"The student who name is {name} is {age} years old and has a grade of {grade} with an an id of {id}";	
 		}
+
+		public void getting_info()
+		{
+			Console.WriteLine("Student age");
+			age = int.Parse(Console.ReadLine());
+			Console.WriteLine("Student's grade");
+			grade = Console.ReadLine();
+			Console.WriteLine("Student's name");
+			name = Console.ReadLine();
+			Console.WriteLine("Student's id");
+			int id = int.Parse(Console.ReadLine());
+
+
+		}
+
 	}
 }
