@@ -37,7 +37,12 @@ namespace Databases_Crud.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("TeacherId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("Students");
                 });
@@ -63,6 +68,15 @@ namespace Databases_Crud.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teachers");
+                });
+
+            modelBuilder.Entity("Databases_Crud.Student", b =>
+                {
+                    b.HasOne("Databases_Crud.Teacher", "Teachers")
+                        .WithMany()
+                        .HasForeignKey("TeacherId");
+
+                    b.Navigation("Teachers");
                 });
 #pragma warning restore 612, 618
         }
