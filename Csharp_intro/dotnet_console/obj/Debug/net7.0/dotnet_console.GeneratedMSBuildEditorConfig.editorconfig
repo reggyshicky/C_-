@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = dotnet_console
-build_property.ProjectDir = /home/ftkzijhzi/C_Sharp/Csharp_intro/dotnet_console/
+build_property.ProjectDir = C:\Users\12514\Source\Repos\reggyshicky\C_Sharp\Csharp_intro\dotnet_console\

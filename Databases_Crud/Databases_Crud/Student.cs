@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Databases_Crud
 {
-    public class Student
+    public class Student: BaseModel
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime DateofBirth{ get; set; }
+ 
     }
 }
