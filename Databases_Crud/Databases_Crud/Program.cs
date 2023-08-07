@@ -3,6 +3,8 @@
 using Databases_Crud;
 
 ConsoleProvider y = new ConsoleProvider();
-y.AddInformation();
+
+
+y.GetTeachersNO();
+y.AddStudentWithTeachersInfo();
 y.print_info();
-        
