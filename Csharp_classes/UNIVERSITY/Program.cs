@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Reggy;
+
+Console_Provider y = new Console_Provider();
+y.Data_Entry();
+y.PrintInformation();

@@ -50,7 +50,7 @@ public class University_Data_Access_Layer
         schools.List_Departments.Add(Departments);
         return schools;
     }
-    public University Add_University(string name, int id)
+    public University Add_University(string name, int id, string Location)
     {
         University universities = new University();
         universities.Id = id;
