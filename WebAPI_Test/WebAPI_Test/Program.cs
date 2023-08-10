@@ -36,9 +36,13 @@ app.MapPost("student", (Student student, SchoolDBContext db) =>
     db.SaveChanges();
     return student;
 });
-app.MapGet("student", (SchoolDBContext db) =>
+app.MapGet("student", ( SchoolDBContext db) =>
 {
     return db.Students.ToList();
+});
+app.MapGet("student/{id}", (int id, SchoolDBContext db) =>
+{
+    return db.Students.FirstOrDefault(x => x.Id == id);
 });
 app.UseSwagger();
 app.UseSwaggerUI();
